@@ -36,6 +36,7 @@ public class Main extends Application {
         ObservableList<String> trasnportTypes= FXCollections.observableArrayList("Car","Train","Plane");
         cbTransport = new ComboBox<String>(trasnportTypes);
         cbTransport.setValue("Train");
+        cbTransport.setEditable(true);
         response.setText("Selected Transport is : "+cbTransport.getValue());
         cbTransport.setOnAction(new EventHandler<ActionEvent>() {
             @Override
